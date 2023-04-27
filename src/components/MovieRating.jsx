@@ -7,6 +7,7 @@ const StyledFaStar = styled(FaStar)`
 const StyledP = styled.p`
   color: #9c9c9c;
   margin-left: 4px;
+  /* margin-top: 10px; */
 `;
 const StyledDiv = styled.div`
   display: flex;

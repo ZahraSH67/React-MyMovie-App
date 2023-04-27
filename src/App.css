@@ -5,6 +5,14 @@
   padding: 2rem;
   font-family: "Mulish", sans-serif;
 }
+/* footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+width: 100%;
+background-color:white;
+} */
+
 body,
 figure,
 p,
@@ -49,4 +57,12 @@ header {
 }
 .movieCardContainer::-webkit-scrollbar {
   display: none;
+}
+.themes{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.themeInformation{
+  margin-left: 20px;
 }

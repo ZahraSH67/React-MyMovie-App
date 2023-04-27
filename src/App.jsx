@@ -3,6 +3,8 @@ import MovieCard from "./templates/MovieCard";
 import SeeMoreButton from "./components/SeeMoreButton";
 import Heading from "./components/Heading";
 import Switch from "./components/Switch";
+import PopularCard from "./templates/PopularCard";
+import Footer from "./templates/Footer";
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
         <Heading title="MyMovies" size="16" as="h1" />
         <Switch />
       </header>
+
       <main>
         <section>
           <div className="flexContainer space-between">
@@ -23,10 +26,26 @@ function App() {
             <MovieCard />
           </div>
         </section>
-        <section></section>
+        <section>
+          <div className="flexContainer space-between">
+              <Heading title="Popular" size="16" as="h2" />
+              <SeeMoreButton />
+          </div>
+              <PopularCard title="Venom Let There Be Carnage"/>
+              <PopularCard title="The King’s Man"/>
+              <PopularCard title="The King’s Man"/>
+              <PopularCard title="The King’s Man"/>
+              <PopularCard title="The King’s Man"/>
+          <div>
+
+          </div>
+        </section>
       </main>
+      
       <footer>
-        <nav></nav>
+        {/* <nav className="divFooter"> */}
+            <Footer />
+        {/* </nav> */}
       </footer>
     </div>
   );
